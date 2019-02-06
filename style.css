@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas:'header header header'
+                        'nav nav aside'
+                        'section section aside'
+                        'footer footer footer';
+    grid-auto-rows: 10vh 20vh 50vh 40vh;
+    grid-column-gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: rgb(221, 28, 86);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: white;
+    font-size: 12pt;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header a:nth-child(4){
+    font-size: 14pt;
+    color: black;
+}
+header a:hover{
+    font-size-adjust: 16pt;
+}
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+section{
+    grid-area: section;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section img{
+    width: 400px;
+    height: 300;
+}
+footer{
+    grid-area: footer;
+    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
